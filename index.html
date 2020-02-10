@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	
+				<script type="text/javascript">
+function update()
+{
+  var form = document.forms[0];
+  var sum = ((((eval(form.x.value) * eval(form.y.value))/60)/eval(form.b.value))/40);
+  form.sum.value = isNaN(sum) ? "" : sum;
+}
+</script>
+
+<form name="form1" onsubmit="false">
+<fieldset>
+<legend>Simple calculation</legend>
+<label for="f1">Total Tasks</label>
+<input id="f1" name="x" type="number" onchange="update()">
+<label for="f2">Time Per Task</label>
+<input id="f2" name="y" type="number" onchange="update()">
+<label for="f3">Deadline In Weeks</label>
+<input id="f3" name="b" type="number" onchange="update()">
+<label for="f4">Team Size</label>
+<input id="f4" name="sum" readonly="readonly">
+</fieldset>
+</form>
