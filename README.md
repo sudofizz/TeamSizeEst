@@ -1,4 +1,10 @@
+ This form calculates the required team size given the following variables:
+ 
+ x = Total task count
+ y = Avg time per task
+ b = Weeks till completion/deadline
+ 
  Formula:
- (((Total tasks * Avg time per task)/60)/Weeks till completion)/40)
+ (((x * y)/60)/b)/40)
  
  https://sudofizz.github.io/TeamSizeEst/
