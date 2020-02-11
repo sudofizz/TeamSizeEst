@@ -15,7 +15,13 @@ function update()
 }
 </script>
 
-<form name="form1" onsubmit="false">
+<form name="form1" onsubmit="false" title='This form calculates the required team size given the following variables:
+
+x = Total task count y = Avg time per task b = Weeks till completion/deadline
+
+Formula: (((x * y)/60)/b)/40)
+
+'>
 <fieldset>
 <legend>Team Size Calculation</legend>
 <label for="f1">Total Tasks</label>
