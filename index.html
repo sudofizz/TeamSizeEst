@@ -14,7 +14,7 @@ function update()
   form.sum.value = isNaN(sum) ? "" : sum;
 }
 </script>
-<div style="margin:0 auto;width:85%;text-align:left">
+<div style="margin:0 auto;width:75%;text-align:left">
 <form name="form1" onsubmit="false">
 <fieldset>
 <legend>Team Size Calculation</legend>
@@ -24,7 +24,9 @@ function update()
 <input id="f2" name="y" type="number" onchange="update()">
 <label for="f3">Deadline In Weeks</label>
 <input id="f3" name="b" type="number" onchange="update()">
-<label for="f4">Team Size</label>
+<div> text-align:center;
+	<label for="f4">Team Size</label>
 <input id="f4" name="sum" readonly="readonly">
+	<div>
 </fieldset>
 </form>
