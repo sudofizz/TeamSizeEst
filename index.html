@@ -10,7 +10,7 @@
 function update()
 {
   var form = document.forms[0];
-  var sum = Math.round(((((eval(form.x.value) * eval(form.y.value))/60)/eval(form.b.value))/40));
+  var sum = Math.ceil(((((eval(form.x.value) * eval(form.y.value))/60)/eval(form.b.value))/40));
   form.sum.value = isNaN(sum) ? "" : sum;
 }
 </script>
